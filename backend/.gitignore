@@ -1,0 +1,16 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/vendor
+.env
+.env.backup
+.env.production
+auth.json
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
+/.fleet
+/.idea
+/.vscode
