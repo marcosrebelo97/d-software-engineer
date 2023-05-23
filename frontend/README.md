@@ -1,29 +1,22 @@
-# lista
+### Para executar o frontend via terminal seguir os passos abaixo:
 
-## Project setup
-
+#### Configuração do projeto 
+1º comando
 ```
 yarn install
 ```
-
-### Compiles and hot-reloads for development
-
+#### Compila e faz hot-reloads para desenvolvimento
+2º comando
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-
+#### Compila e minifica para produção
+3º comando
 ```
 yarn build
 ```
-
-### Lints and fixes files
-
+#### Lints e corrige arquivos
+4º comando:
 ```
 yarn lint
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
