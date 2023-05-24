@@ -9,13 +9,13 @@
 
 
   - **2º nível: Contêineres**
-       - Amplica o sistema de software, mostranso os blocos de contrução técnicos de alto nível.
+       - Amplia o sistema de software, mostrando os blocos de contrução técnicos de alto nível.
 
 ![test2](Conteiner.svg)
 
 
 
   - **3º nível: Componentes**
-       - Amplia os contêineres, mostrando os componentes dentro dele e suas atribuições.
+       - Amplia os contêineres, mostrando os componentes internos e suas atribuições.
 
 ![test3](Componentes.svg)
