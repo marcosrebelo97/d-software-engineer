@@ -1,4 +1,4 @@
 ### Projeto X-Caboquinho - Software Engineer
 
 #### Informação: 
-  - Cada pasta tem um arquivo `README.md` para execução e entendimento de cada fase.
+  - O projeto foi dividido em três etapas, cada etapa contém um arquivo `README.md` para execução e entendimento do avanço em cada fase.
