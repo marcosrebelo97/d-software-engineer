@@ -1,0 +1,24 @@
+@startuml Componentes
+!include <C4/C4_Container>
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!include DEVICONS/mysql.puml
+
+Container(containerAlias, "Web Application", "Laravel, PHP, Vue.js", "Sistema que executa operações de cadastro, edição e listagem de informações cadastrais")
+System_Boundary(c1, "Sistema de Cadastro") {
+    Component(alias, Controller, UserController, "Responsável por receber e tratar requisições HTTPS da aplicação web")
+    Component(alias3, Service, ViaCepService, "Responsável pela lógica de integração com a API do serviço ViaCEP")
+    Component(alias4, Model, User, "Representa a entidade de usuário no sistema e definição de seus atributos")
+
+
+}
+ContainerDb(db, "Database", "MySQL", "Responsável pelo armazenamento de dados dos usuários", $sprite="mysql")
+
+Rel(containerAlias, alias, "Acessa", "JSON/HTTPS")
+Rel(alias, alias3, "")
+Rel(alias3, alias4, "")
+Rel(alias4, db, "")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml

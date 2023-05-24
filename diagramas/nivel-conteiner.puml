@@ -1,0 +1,20 @@
+@startuml Conteiner
+!include <C4/C4_Container>
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!include DEVICONS/mysql.puml
+
+Person(person, "Usuário", "Cliente da plataforma, efetua registros de dados pessoais")
+System_Boundary(c1, "Sistema de Cadastro") {
+    Container(containerAlias, "Web Application", "Laravel, PHP, Vue.js", "Sistema que executa operações de cadastro, edição e listagem de informações cadastrais")
+    Container_Ext(containerTo, "API", "System Software ViaCEP", "Sistema externo utilizado para obter informações de endereços a partir do CEP")
+    ContainerDb(db, "Database", "MySQL", "Responsável pelo armazenamento de dados dos usuários", $sprite="mysql")
+    
+}
+
+Rel(person, containerAlias, "Acessa", "HTTPS")
+Rel(containerAlias, db, "Acessa", "SQL/JDBC, port 3306")
+Rel(containerAlias, containerTo, "Efetua chamadas de API", "JSON/HTTPS")
+
+LAYOUT_WITH_LEGEND()
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml ContextoDoSistema
+!include <C4/C4_Container>
+
+Person(personAlias, "Usuário", "Cliente da plataforma que interage com as funcionalidades de cadastro de usuários")
+System(containerAlias, "Web Application", "Executa operações de cadastro, edição e listagem de informações cadastrais")
+
+Rel(personAlias, containerAlias, "Acessa", "HTTPS")
+@enduml
