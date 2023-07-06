@@ -10,13 +10,15 @@
   ## Tecnologias | Stack
   - **Back-end:**
     - Laravel
-    - PHP
+    - PHP 8 ou superior
     - Padrão de projeto: Domain-Driven Design (DDD).
   - **Front-end:**
     - Vue.js
     - Axios
-  - Arquitetura do Sistema - Notação: [C4 Model](https://c4model.com/)
+  - NPM
+  - Node.js 
   - Docker Compose
   - PostgreSQL
+  - Arquitetura do Sistema - Notação: [C4 Model](https://c4model.com/)
     
 
